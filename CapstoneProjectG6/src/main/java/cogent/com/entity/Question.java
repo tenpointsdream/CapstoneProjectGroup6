@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Questions")
+@Table(name = "questions")
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,9 +22,10 @@ public class Question {
     private String status;
     private String topics;
     private String title;
+    @OneToMany(mappedBy = "question", fetch=FetchType.EAGER)
     private List<Answer> answers;
     @OneToOne
-    private String qcreated_by;
+    private User qcreated_by;
     @OneToOne
-    private String qapproved_by;
+    private User qapproved_by;
 }
