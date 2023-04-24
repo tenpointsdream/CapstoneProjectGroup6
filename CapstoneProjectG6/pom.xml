@@ -12,7 +12,7 @@
 	<artifactId>CapstoneProjectGroup6</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CapstoneProjectGroup6</name>
-	<description>DoConnect Capstone Project </description>
+	<description>DoConnect Capstone Project</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
